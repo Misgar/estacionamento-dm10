@@ -1,0 +1,9 @@
+{
+    "name": "renatoao/gestao-estacionamento",
+    "autoload": {
+        "psr-4": {
+            "Renatoao\\GestaoEstacionamento\\": "src/"
+        }
+    },
+    "require": {}
+}
