@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+
+session_start()
+
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,25 +12,19 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" >
 </head>
 <body>
-<h2>VENDER CARRO</h2>
+<h2>Cadastrar Estacionamento</h2>
+<hr>
 <div class="container" id="container">
     <div class="form">
-        <form action="vendaCarro.php" method="post" >
-
+        <form action="../Controller/ViewController.php" method="post" >
             Nome <input type="text" name="nome" id="nome"><br><br>
             Idade <input type="text" class="idade" name="idade"><br> <br>
-            Documento <input type="text" name="documento" id="rg"><br> <br>
-            <label for="carros"> Carro desejado </label>
+            CPF <input type="text" name="documento" id="cpf"><br> <br>
+            Celular <input type="text" name="documento" id="cpf"><br><br>
+            Modelo <input type="text" name="modelo"> <br> <br>
+            Placa do veículo<input type="number" name="placa"> <br> <br>
 
-                <select name="carroEscolhido" id="carros">
-                
-                    <option value="Ford KA"> Ford KA </option>
-                    <option value="BMW"> BMW</option>
-
-                </select>
-                <br>
-                <input type="submit" name="submit" value="Enviar">
-
+            <input type="submit" value="Cadastrar">
         </form>
     </div>
 </div> 
