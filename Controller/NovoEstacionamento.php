@@ -34,8 +34,6 @@ Class NovoEstacionamento{
         $this->placa = filter_input(INPUT_POST, 'placa');
 
     }
-
-
     /**
      * Get the value of placa
      */ 

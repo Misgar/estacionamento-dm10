@@ -10,7 +10,7 @@ Class ListaClientes{
 
         $dados = [];
 
-        $sql = $pdo->returnConnection()->prepare("SELECT * FROM proprietarios");
+        $sql = $pdo->returnConnection()->query("SELECT * FROM proprietarios");
 
         if($sql -> rowCount() > 0)
         {
@@ -28,7 +28,7 @@ Class ListaClientes{
 
         $dados = [];
 
-        $sql = $pdo->returnConnection()->prepare
+        $sql = $pdo->returnConnection()->query
         ("
         SELECT nome, cpf, email, marcaCarro FROM proprietarios, carrosEstacionados WHERE cpf = cpfProprietario
         ");
@@ -42,5 +42,4 @@ Class ListaClientes{
     }
 
 }
-
 
