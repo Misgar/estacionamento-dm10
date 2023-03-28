@@ -49,7 +49,23 @@ Class Cadastrarcliente
 
 
         }
-    
+     }
+     public function cadastraUnicoCliente($nome, $cpf, $idade, $email, $celular){
+        $pdo = new DBConnection;
+        
+        $sql = $pdo->returnConnection()->prepare
+            ("INSERT INTO proprietarios 
+            (cpf, nome, idade, email, celular) VALUES
+            (:cpf, :nome, :idade, :email, :celular)
+            ");
 
-    }
+        $sql->bindValue(':cpf', $cpf);
+        $sql->bindValue(':nome', $nome);
+        $sql->bindValue(':idade', $idade);
+        $sql->bindValue(':email', $email);
+        $sql->bindValue(':celular', $celular);
+
+        $sql->execute();
+
+     }
 }

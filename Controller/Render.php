@@ -2,14 +2,12 @@
 require_once '../vendor/autoload.php';
 class Render {
     ## Classe que renderiza informações na View, com parâmetros em array assoc.
-    public function renderizarPagina($caminhoParaPagina, $dados) {
+    public function renderizarPagina($caminhoParaPagina, $dados = 0) {
         include($caminhoParaPagina);
     }
 }
 
-$modelListagem = new ListaClientes;
 
-$render = new Render;
-$dados = $modelListagem ->listaClientes();
-
-$render->renderizarPagina('../View/visualizaClientes.php', $dados);
+// git push origin master main -f
+// composer dump-autoload
+// Finalizad inserção dos dados e CONTINUAR.

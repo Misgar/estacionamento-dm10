@@ -1,13 +1,6 @@
 <?php
 require_once "../vendor/autoload.php";
 
-$nome = filter_input(INPUT_POST, 'nome');
-$cpf = filter_input(INPUT_POST, 'cpf');
-$email = filter_input(INPUT_POST, 'email');
-
-
-
-
 Class NovoEstacionamento{
     private $nome;
     

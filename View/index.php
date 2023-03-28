@@ -27,6 +27,7 @@ session_start()
 
             <input type="submit" value="Cadastrar">
         </form>
+        <a href="../Controller/ListagemClientes.php">Consultar Proprietarios</a>
     </div>
 </div> 
 </body>
