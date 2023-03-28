@@ -16,13 +16,14 @@ session_start()
 <hr>
 <div class="container" id="container">
     <div class="form">
-        <form action="../Controller/ViewController.php" method="post" >
+        <form action="../Controller/NovoEstacionamento.php" method="post" >
             Nome <input type="text" name="nome" id="nome"><br><br>
             Idade <input type="text" class="idade" name="idade"><br> <br>
-            CPF <input type="text" name="documento" id="cpf"><br> <br>
-            Celular <input type="text" name="documento" id="cpf"><br><br>
+            CPF <input type="text" name="cpf" id="cpf"><br> <br>
+            Email <input type="email" name="email"> <br><br> 
+            Celular <input type="text" name="celular" id="cpf"><br><br>
             Modelo <input type="text" name="modelo"> <br> <br>
-            Placa do veículo<input type="number" name="placa"> <br> <br>
+            Placa do veículo<input type="text" name="placa"> <br> <br>
 
             <input type="submit" value="Cadastrar">
         </form>

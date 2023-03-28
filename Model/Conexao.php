@@ -1,6 +1,6 @@
 <?php
 class DBConnection{
-    private $database = 'comprador';
+    private $database = 'estacionamento';
     private $host = 'localhost';
     private $dbuser = 'root';
 
